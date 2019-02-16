@@ -1,14 +1,12 @@
 class Retry < Formula
   desc "The missing command-line tool to execute the same command several times"
   homepage "https://github.com/martinezdelariva/retry"
-  url "https://github.com/martinezdelariva/retry/archive/v0.2.tar.gz"
-  sha256 "71f46b91248116a8b3c8c484af45ebc62cba644f76c669d5944d9b7fa84c7eba"
-
-  depends_on "go" => :build
+  url "https://github.com/martinezdelariva/retry/releases/download/v0.2/retry-mac"
+  sha256 "0a5a859bf0b8c108d3cd5bc5aaa520848138dcd07fd3d9ea8005dd899122df17"
 
   def install
-    system "make", "build"
-    bin.install "bin/retry"
+    system "mv", "retry-mac", "retry"
+    bin.install "retry"
   end
 
   test do
