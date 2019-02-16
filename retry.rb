@@ -1,8 +1,8 @@
 class Retry < Formula
   desc "The missing command-line tool to execute the same command several times"
   homepage "https://github.com/martinezdelariva/retry"
-  url "https://github.com/martinezdelariva/retry/archive/v0.1.tar.gz"
-  sha256 "1a0aec4a7e02530485d9af17ee119d2256bee47cdbdf13c282a62113b039687a"
+  url "https://github.com/martinezdelariva/retry/archive/v0.2.tar.gz"
+  sha256 "71f46b91248116a8b3c8c484af45ebc62cba644f76c669d5944d9b7fa84c7eba"
 
   depends_on "go" => :build
 
